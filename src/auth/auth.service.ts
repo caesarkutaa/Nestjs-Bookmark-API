@@ -6,9 +6,9 @@ import { InjectRepository } from '@nestjs/typeorm';
 import { Repository} from 'typeorm'
 import * as bcrypt from 'bcrypt'
 import { LoginUserDTO } from './dto/loginUser.dto';
-import { JwtModule, JwtService } from '@nestjs/jwt';
+import {  JwtService } from '@nestjs/jwt';
 import { ConfigService } from '@nestjs/config';
-import { promises } from 'dns';
+
 
 
 

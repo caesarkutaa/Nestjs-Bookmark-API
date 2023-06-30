@@ -28,7 +28,7 @@ export class User{
     UpdateAt:string
 
     
-    @OneToMany((type)=> Bookmark, (bookmarks) => bookmarks.user)
+    @OneToMany(()=> Bookmark, bookmark => bookmark.user)
     bookmarks:Bookmark[]
 
     @BeforeInsert()

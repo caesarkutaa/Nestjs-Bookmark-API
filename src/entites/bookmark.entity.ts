@@ -19,7 +19,7 @@ export class Bookmark{
     link:string
 
 
-    @ManyToOne((type) => User, (user)=> user.bookmarks)
+    @ManyToOne(() => User, user => user.bookmarks)
     user:User
     
     @CreateDateColumn()
